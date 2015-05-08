@@ -1,0 +1,5 @@
+'TYPO3.Neos:Document':
+  properties:
+    uriPathSegment:
+      validation:
+        'Swisscom.Neos.CaseInsensitiveUrls/Validation/LowercaseValidator': []

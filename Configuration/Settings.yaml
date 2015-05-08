@@ -1,0 +1,7 @@
+
+TYPO3:
+  Neos:
+    userInterface:
+      validators:
+        'Swisscom.Neos.CaseInsensitiveUrls/Validation/LowercaseValidator':
+          path: 'resource://Swisscom.Neos.CaseInsensitiveUrls/Public/JavaScript/Validation/LowercaseValidator'

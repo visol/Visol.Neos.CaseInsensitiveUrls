@@ -1,0 +1,34 @@
+<?php
+namespace Swisscom\Neos\CaseInsensitiveUrls\Aspect;
+/*                                                                        *
+ * This script belongs to the TYPO3 Flow package                          *
+ * "Swisscom.Neos.CaseInsensitiveUrls"                                    *
+ *                                                                        *
+ *                                                                        */
+
+use TYPO3\Flow\Annotations as Flow;
+
+/**
+ * Class LowercaseRoutePartAspect
+ *
+ * @Flow\Aspect
+ * @Flow\Scope("singleton")
+ */
+class LowercaseRoutePartAspect {
+
+	/**
+	 * Initializes the object after all dependencies have been injected
+	 */
+	public function initializeObject() {
+	}
+
+	/**
+	 * @Flow\Before("method(TYPO3\Neos\Routing\FrontendNodeRoutePartHandler->matchValue())")
+	 * @return void
+	 */
+	public function convertRoutePartToLowerCase(\TYPO3\Flow\AOP\JoinPointInterface $joinPoint) {
+		$lowerCaseRequestPath = strtolower($joinPoint->getMethodArgument('requestPath'));
+
+		$joinPoint->setMethodArgument('requestPath', $lowerCaseRequestPath);
+	}
+}
