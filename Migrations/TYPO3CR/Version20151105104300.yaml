@@ -1,0 +1,19 @@
+up:
+  comments: 'Transforms all uriPathSegment values to lowercase'
+  warnings: 'As this migration removes the distinction between uppercase and lowercase it might not be cleanly undone by the down migration.'
+  migration:
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'TYPO3.Neos:Document'
+            withSubTypes: TRUE
+      transformations:
+        -
+          type: 'Swisscom\Neos\CaseInsensitiveUrls\Migration\Transformations\ChangePropertyValueToLowercase'
+          settings:
+            property: 'uriPathSegment'
+
+down:
+  comments: 'No down migration available'
