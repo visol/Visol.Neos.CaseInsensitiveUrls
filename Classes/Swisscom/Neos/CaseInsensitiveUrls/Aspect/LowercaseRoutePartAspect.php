@@ -27,8 +27,14 @@ class LowercaseRoutePartAspect {
 	 * @return void
 	 */
 	public function convertRoutePartToLowerCase(\TYPO3\Flow\AOP\JoinPointInterface $joinPoint) {
-		$lowerCaseRequestPath = strtolower($joinPoint->getMethodArgument('requestPath'));
+		$requestPath = $joinPoint->getMethodArgument('requestPath');
 
+		if (strpos($requestPath, 'user')) {
+			$parts = explode("user", $requestPath);
+			$lowerCaseRequestPath = strtolower($parts[0]) . "user" . $parts[1];
+		} else {
+			$lowerCaseRequestPath = strtolower($requestPath);
+		}
 		$joinPoint->setMethodArgument('requestPath', $lowerCaseRequestPath);
 	}
 }
