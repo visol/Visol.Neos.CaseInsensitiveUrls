@@ -3,7 +3,7 @@
  */
 define(
 	[
-		'TYPO3.Neos/Validation/AbstractValidator'
+		'Neos.Neos/Validation/AbstractValidator'
 	],
 	function(AbstractValidator) {
 		return AbstractValidator.extend({

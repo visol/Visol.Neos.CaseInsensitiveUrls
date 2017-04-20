@@ -23,7 +23,7 @@ class LowercaseRoutePartAspect {
 	}
 
 	/**
-	 * @Flow\Before("method(TYPO3\Neos\Routing\FrontendNodeRoutePartHandler->matchValue())")
+	 * @Flow\Before("method(Neos\Neos\Routing\FrontendNodeRoutePartHandler->matchValue())")
 	 * @return void
 	 */
 	public function convertRoutePartToLowerCase(\Neos\Flow\AOP\JoinPointInterface $joinPoint) {

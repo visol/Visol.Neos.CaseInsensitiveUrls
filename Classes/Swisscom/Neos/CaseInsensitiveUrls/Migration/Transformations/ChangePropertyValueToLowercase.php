@@ -43,7 +43,7 @@ class ChangePropertyValueToLowercase extends AbstractTransformation {
 	/**
 	 * Change the property on the given node.
 	 *
-	 * @param \Neos\√\Domain\Model\NodeData $node
+	 * @param \Neos\ContentRepository\Domain\Model\NodeData $node
 	 * @return void
 	 */
 	public function execute(\Neos\ContentRepository\Domain\Model\NodeData $node) {

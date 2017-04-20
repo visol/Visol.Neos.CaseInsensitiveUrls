@@ -7,7 +7,7 @@ up:
         -
           type: 'NodeType'
           settings:
-            nodeType: 'TYPO3.Neos:Document'
+            nodeType: 'Neos.Neos:Document'
             withSubTypes: TRUE
       transformations:
         -
