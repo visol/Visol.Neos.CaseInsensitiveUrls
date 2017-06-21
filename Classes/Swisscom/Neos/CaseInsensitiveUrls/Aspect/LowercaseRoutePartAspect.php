@@ -6,7 +6,7 @@ namespace Swisscom\Neos\CaseInsensitiveUrls\Aspect;
  *                                                                        *
  *                                                                        */
 
-use TYPO3\Flow\Annotations as Flow;
+use Neos\Flow\Annotations as Flow;
 
 /**
  * Class LowercaseRoutePartAspect
@@ -23,10 +23,10 @@ class LowercaseRoutePartAspect {
 	}
 
 	/**
-	 * @Flow\Before("method(TYPO3\Neos\Routing\FrontendNodeRoutePartHandler->matchValue())")
+	 * @Flow\Before("method(Neos\Neos\Routing\FrontendNodeRoutePartHandler->matchValue())")
 	 * @return void
 	 */
-	public function convertRoutePartToLowerCase(\TYPO3\Flow\AOP\JoinPointInterface $joinPoint) {
+	public function convertRoutePartToLowerCase(\Neos\Flow\AOP\JoinPointInterface $joinPoint) {
 		$lowerCaseRequestPath = strtolower($joinPoint->getMethodArgument('requestPath'));
 
 		$joinPoint->setMethodArgument('requestPath', $lowerCaseRequestPath);
