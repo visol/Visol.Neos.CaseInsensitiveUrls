@@ -1,15 +1,15 @@
 {
     "name": "swisscom/neos-caseinsensitiveurls",
-    "type": "typo3-flow-package",
-    "description": "Make URLs case insensitive in TYPO3 Neos",
-    "license": "GPL-3.0+",
+    "type": "neos-package",
+    "description": "Make URLs case insensitive in Neos",
+    "license": "GPL-3.0-or-later",
     "require": {
         "neos/neos": "~3.0.0",
         "neos/nodetypes": "~3.0.0"
     },
     "autoload": {
-        "psr-0": {
-            "Swisscom\\Neos\\CaseInsensitiveUrls": "Classes"
+        "psr-4": {
+            "Swisscom\\Neos\\CaseInsensitiveUrls\\": "Classes"
         }
     }
 }
