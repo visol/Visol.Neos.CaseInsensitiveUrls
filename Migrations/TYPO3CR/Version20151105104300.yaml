@@ -11,7 +11,7 @@ up:
             withSubTypes: TRUE
       transformations:
         -
-          type: 'Swisscom\Neos\CaseInsensitiveUrls\Migration\Transformations\ChangePropertyValueToLowercase'
+          type: 'Visol\Neos\CaseInsensitiveUrls\Migration\Transformations\ChangePropertyValueToLowercase'
           settings:
             property: 'uriPathSegment'
 

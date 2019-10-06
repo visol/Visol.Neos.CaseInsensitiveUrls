@@ -1,14 +1,14 @@
 {
-    "name": "swisscom/neos-caseinsensitiveurls",
+    "name": "visol/neos-caseinsensitiveurls",
     "type": "neos-package",
     "description": "Make URLs case insensitive in Neos",
     "license": "GPL-3.0-or-later",
     "require": {
-        "neos/neos": "^3.0 || ^4.0"
+        "neos/neos": "^3.0 || ^4.0 || ^5.0"
     },
     "autoload": {
         "psr-4": {
-            "Swisscom\\Neos\\CaseInsensitiveUrls\\": "Classes"
+            "Visol\\Neos\\CaseInsensitiveUrls\\": "Classes"
         }
     },
     "extra": {

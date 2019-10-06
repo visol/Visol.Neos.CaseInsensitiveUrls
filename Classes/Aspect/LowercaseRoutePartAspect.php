@@ -1,10 +1,11 @@
 <?php
-namespace Swisscom\Neos\CaseInsensitiveUrls\Aspect;
+namespace Visol\Neos\CaseInsensitiveUrls\Aspect;
 
 /*
  * This file is part of the Swisscom.Neos.CaseInsensitiveUrls package.
  *
  * (c) Swisscom Internet Solutions
+ * (c) visol digitale Dienstleistungen GmbH, www.visol.ch
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
