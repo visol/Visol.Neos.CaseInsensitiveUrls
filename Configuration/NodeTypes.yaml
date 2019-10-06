@@ -2,4 +2,5 @@
   properties:
     uriPathSegment:
       validation:
-        'Swisscom.Neos.CaseInsensitiveUrls/Validation/LowercaseValidator': []
+        'Neos.Neos/Validation/RegularExpressionValidator':
+          regularExpression: '/^[a-z0-9\-]+$/'
