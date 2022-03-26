@@ -1,6 +1,6 @@
 # Case insensitive URLs in Neos
 
-This is a Neos package that allows the usage of case insensitive URLs. As a consequence, the uriPathSegment `/foobar` can be accessed as
+This is a Neos package that allows the usage of case-insensitive URLs. As a consequence, the uriPathSegment `/foobar` can be accessed as
 
 * `foobar`
 * `FooBar`
@@ -10,13 +10,13 @@ This is a Neos package that allows the usage of case insensitive URLs. As a cons
 
 ## Compatibility and Maintenance
 
-This package is currently being maintained for the following versions:
+This package is currently maintained for the following versions:
 
-| Neos / Flow Version        | Version | Branch | Maintained |
-|----------------------------|----------------------------------|--------|------------|
-| Neos 3.x-5.x         | 4.x  | master | Yes        |
-| Neos 3.x-4.x         | 3.x | 3.x    | No   |
-| Neos 2.3 LTS | 2.x  | - | No         |
+| Neos Version | Package Version | Branch | Maintained |
+|------------------|-----------------|--------|------------|
+| Neos 3.x-7.x     | 4.x             | master | Yes        |
+| Neos 3.x-4.x     | 3.x             | 3.x    | No   |
+| Neos 2.3 LTS     | 2.x             | - | No         |
 
 
 ## Installation
