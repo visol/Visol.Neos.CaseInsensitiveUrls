@@ -14,7 +14,7 @@ This package is currently maintained for the following versions:
 
 | Neos Version | Package Version | Branch | Maintained |
 |------------------|-----------------|--------|------------|
-| Neos 3.x-7.x     | 4.x             | master | Yes        |
+| Neos 3.x-8.x     | 4.x             | master | Yes        |
 | Neos 3.x-4.x     | 3.x             | 3.x    | No   |
 | Neos 2.3 LTS     | 2.x             | - | No         |
 
