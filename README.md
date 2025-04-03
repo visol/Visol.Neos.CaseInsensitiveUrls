@@ -13,10 +13,10 @@ This is a Neos package that allows the usage of case-insensitive URLs. As a cons
 This package is currently maintained for the following versions:
 
 | Neos Version | Package Version | Branch | Maintained |
-|------------------|-----------------|--------|------------|
-| Neos 3.x-8.x     | 4.x             | master | Yes        |
-| Neos 3.x-4.x     | 3.x             | 3.x    | No   |
-| Neos 2.3 LTS     | 2.x             | - | No         |
+|--------------|-----------------|--------|------------|
+| Neos 3.x-9.x | 4.x             | master | Yes        |
+| Neos 3.x-4.x | 3.x             | 3.x    | No   |
+| Neos 2.3 LTS | 2.x             | - | No         |
 
 
 ## Installation
@@ -27,7 +27,7 @@ Just add this package to your `composer.json` using
 
 and execute the node migration
 
-    ./flow node:migrate --version 20151105104300 --confirmation TRUE
+    ./flow nodemigration:execute --version 20250403134604 --confirmation TRUE
 
 Warning: The node migration will convert all uriPathSegments to lowercase. This process cannot be reversed.
 

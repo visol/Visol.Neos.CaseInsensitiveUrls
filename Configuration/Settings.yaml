@@ -1,0 +1,5 @@
+Neos:
+  ContentRepositoryRegistry:
+    nodeMigration:
+      transformationFactories:
+        ChangePropertyValueToLowercase: Visol\Neos\CaseInsensitiveUrls\Migration\Transformations\ChangePropertyValueToLowercaseFactory
