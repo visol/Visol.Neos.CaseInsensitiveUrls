@@ -1,0 +1,15 @@
+
+comments: 'Transforms all uriPathSegment values to lowercase'
+migration:
+  -
+    filters:
+      -
+        type: 'NodeType'
+        settings:
+          nodeType: 'Neos.Neos:Document'
+          withSubTypes: TRUE
+    transformations:
+      -
+        type: 'ChangePropertyValueToLowercase'
+        settings:
+          property: 'uriPathSegment'
