@@ -14,10 +14,10 @@ This package is currently maintained for the following versions:
 
 | Neos Version | Package Version | Branch | Maintained |
 |--------------|-----------------|--------|------------|
-| Neos 3.x-9.x | 4.x             | master | Yes        |
-| Neos 3.x-4.x | 3.x             | 3.x    | No   |
-| Neos 2.3 LTS | 2.x             | - | No         |
-
+| Neos 9.x     | 5.x             | main   | Yes        |
+| Neos 3.x-8.x | 4.x             | 4.x    | Yes        |
+| Neos 3.x-4.x | 3.x             | 3.x    | No         |
+| Neos 2.3 LTS | 2.x             | -      | No         |
 
 ## Installation
 
